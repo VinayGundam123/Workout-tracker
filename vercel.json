@@ -1,0 +1,46 @@
+{
+    "builds": [
+      {
+        "src": "index.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "build/**",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/user",
+        "dest": "index.js" 
+      },
+      {
+        "src": "/user/(.*)",
+        "dest": "index.js" 
+      },
+      {
+        "src": "/community",
+        "dest": "index.js" 
+      },
+      {
+        "src": "/community/(.*)",
+        "dest": "index.js" 
+      },
+      {
+        "src": "/home",
+        "dest": "build/index.html" 
+      },
+      {
+        "src": "/posts",
+        "dest": "build/index.html" 
+      },
+      {
+        "src": "/addPost",
+        "dest": "build/index.html" 
+      },
+      {
+        "src": "/(.+)",
+        "dest": "build/$1" 
+      }
+    ]
+  }
