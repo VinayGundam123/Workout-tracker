@@ -10,6 +10,7 @@
       }
     ],
     "routes": [
+
       {
         "src": "/user",
         "dest": "index.js" 
@@ -45,6 +46,10 @@
       {
         "src": "/addPost",
         "dest": "build/index.html" 
+      },
+      {
+        "src":"/",
+        "dest": "build/index.html"
       },
       {
         "src": "/(.+)",
