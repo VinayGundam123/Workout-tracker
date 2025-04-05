@@ -31,7 +31,15 @@
         "dest": "build/index.html" 
       },
       {
+        "src": "/home/(.*)",
+        "dest": "build/index.html" 
+      },
+      {
         "src": "/posts",
+        "dest": "build/index.html" 
+      },
+      {
+        "src": "/posts/(.*)",
         "dest": "build/index.html" 
       },
       {
